@@ -36,11 +36,11 @@ class _HomeState extends State<Home> {
           data == null
               ?
               Center(
-                  child: Text("Loading"),
+                  child: Text("Loading", style: TextStyle(color: whiteColor),),
                 )
               : data == "error"
                   ? Center(
-                      child: Text("Something went wrong!..."),
+                      child: Text("Something went wrong!...", style: TextStyle(color: whiteColor),),
                     )
                   : Padding(
                     padding: const EdgeInsets.only(top: 35),
